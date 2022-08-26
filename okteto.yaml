@@ -1,0 +1,7 @@
+build:
+  api:
+    context: api
+  frontend:
+    context: .
+    dockerfile: Dockerfile
+    target: dev
