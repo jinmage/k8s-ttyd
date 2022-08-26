@@ -1,0 +1,22 @@
+{
+  "name": "ttyd",
+  "description": "ttyd部署到k8s平台",
+  "env": {
+    "PORT": {
+       "description": "应用对外端口",
+       "value": "8989",
+       "required": true
+    },
+    "USERNAME": {
+       "description": "用户名",
+       "value": "admin",
+       "required": true
+    },
+    "PASSWORD": {
+       "description": "密码",
+       "value": "123456",
+       "required": true
+    }
+  },
+  "stack": "container"
+}
