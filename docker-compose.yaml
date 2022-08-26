@@ -1,6 +1,5 @@
-version: '0.2.2'
 services:
-  hexiehao:
+  ttyd:
     build: .
     ports:
       - 8989:80
