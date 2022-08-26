@@ -1,2 +1,15 @@
-name: ttyd
-image: tsl0922/ttyd:latest
+
+build:
+  image: tsl0922/ttyd:latest
+  context: .
+
+deploy:
+  - kubectl apply -f manifests
+
+dev:
+  ttyd:
+    command: bash
+    sync:
+      - .:/usr/src/app
+    forward:
+      - 7681:7681
